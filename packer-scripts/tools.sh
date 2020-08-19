@@ -29,6 +29,10 @@ git clone https://github.com/mainframed/Privesc.git
 git clone https://github.com/sensepost/birp.git
 git clone https://github.com/Tdasu-Mainframes/GATOR.git
 
+echo "=====> Installing python libs"
+pip install wheel
+pip install py3270
+pip install bitstring
 
 echo "=====> Face................ OFF!"
 ln -sf ~/.face ~/.face.icon
