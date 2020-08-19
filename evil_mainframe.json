@@ -63,8 +63,7 @@
     },
     {
       "type" : "shell",
-      "script" : ["packer-scripts/labs.sh"],
-      "valid_exit_codes": [0,1,128]
+      "script" : "packer-scripts/labs.sh"
     },
     {
       "type": "shell",

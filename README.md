@@ -26,7 +26,8 @@ This user has passwordless `sudo` enabled. Labs are located in `~/Labs` and tool
 To build the virtual machine for both VMware and VirtualBox, run the following commands:
 
 * `ssh-agent` (Optional if you have the read only key)
-* `packer build evil_mainframe.json`
+* If using packer version 1.3 use: `packer build evil_mainframe.json`
+* If using newer version of packer use: `packer build evil_mainframe.1.6.json`
 
 
 ## Vagrant (untested/Unsupported)
