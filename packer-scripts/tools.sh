@@ -8,8 +8,8 @@ echo "=====> Making Desktop Launchers Executable"
 chmod +x /home/evilmf/Desktop/*.desktop
 
 echo "=====> Installing Public Tools"
-mkdir -p /home/evilmf/Labs/Tools
-cd /home/evilmf/Labs/Tools
+mkdir -p /home/evilmf/Tools
+cd /home/evilmf/Tools
 git clone https://github.com/mainframed/TShOcker.git
 git clone https://github.com/zedsec390/tn3270lib.git
 git clone https://github.com/zedsec390/shells-payloads
@@ -33,3 +33,7 @@ git clone https://github.com/Tdasu-Mainframes/GATOR.git
 echo "=====> Face................ OFF!"
 ln -sf ~/.face ~/.face.icon
 ln -sf ~/.face ~/.face.png
+
+echo "=====> Making links to desktop folders"
+ln -sf /home/evilmf/Labs ~/Desktop
+ln -sf /home/evilmf/Tools ~/Desktop

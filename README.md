@@ -2,33 +2,34 @@
 
 ## Introduction
 
-This project provides Packer and Vagrant configuration and supporting scripts for Kali Linux for use in the **Evil Mainframe** class, it allows the creation of both standard Kali VMs and Vagrant boxes. The output is an OVF file in the `output-virtualbox-iso` folder that can be imported to VMWare or Virtualbox.
+This project provides Packer and Vagrant configuration and supporting scripts for Kali Linux for use in the **Evil Mainframe** class, it allows the automated creation of standard Kali VMs and tools for use class. The output is an OVF file in the `output-virtualbox-iso` folder that can be imported to VMWare or Virtualbox.
 
 ## Users
 There is only one user created for use on this system:
 
-* Username: evilmf
-* Password: class!
+* Username: **evilmf**
+* Password: **class!**
 
-This user has passwordless `sudo` enabled. Labs are located in `~/Labs` and tools are located in `~Labs/Tools`.
+This user has passwordless `sudo` enabled. Labs are located in `~/Labs` and tools are located in `~/Tools`.
 
 ## Requirements
 * Packer - [https://www.packer.io](https://www.packer.io)
 * Virtualization Software Virtualbox  - [https://www.virtualbox.org](https://www.virtualbox.org)
+* SSH read only key for Evil Mainframe class curriculumn notes/labs
+    * Make sure you run `ssh-agent` before you run packer
+    * You don't need the key, it will install just fine but you wont have labs/notes.
 * (optionally) Vagrant - [https://www.vagrantup.com](https://www.vagrantup.com)
     * If using VMware, you'll also need a license to the Vagrant VMware plugin.
-* SSH read only key for Evil Mainframe class curriculumn notes/labs
-    * You don't need the key, it will install just fine but you wont have labs/notes.
+
 
 ## Usage
-To build the virtual machine for both VMware and VirtualBox, run the following command:
-```packer build packer.json```
+To build the virtual machine for both VMware and VirtualBox, run the following commands:
 
-To only build one or the other
-```packer build -only=vmware-iso packer.json```
-```packer build -only=virtualbox-iso packer.json```
+* `ssh-agent` (Optional if you have the read only key)
+* `packer build evil_mainframe.json`
 
-## Vagrant (untested)
+
+## Vagrant (untested/Unsupported)
 
 To build the Vagrant box, specify the `packer-vagrant.json` config file instead.
 
