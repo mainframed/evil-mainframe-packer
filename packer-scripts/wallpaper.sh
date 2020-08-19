@@ -9,6 +9,7 @@ chmod 644 /usr/share/backgrounds/evilmf/*
 echo "=====> Removing Files"
 rm -f /usr/share/backgrounds/kali-16x9/*
 mv /usr/share/desktop-base/kali-theme/login/background /usr/share/desktop-base/kali-theme/login/background.old
+mv /usr/share/desktop-base/kali-theme/login/background.svg /usr/share/desktop-base/kali-theme/login/background.old.svg
 echo "=====> Creating Links"
 cd /usr/share/backgrounds/kali-16x9/
 ln -s ../evilmf/evil_wallpaper.png /usr/share/backgrounds/kali-16x9/default 
