@@ -1,3 +1,3 @@
-sudo apt-get update
-sudo DEBIAN_FRONTEND=noninteractive apt-get -o Dpkg::Options::="--force-confnew" dist-upgrade -yq
-sudo apt-get install -y virtualbox-guest-x11
+#!/bin/bash -eux
+echo "=====> Installing virtualbox guest additions"
+sudo DEBIAN_FRONTEND=noninteractive sudo apt-get install -y virtualbox-guest-x11

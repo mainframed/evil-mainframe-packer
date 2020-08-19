@@ -1,17 +1,12 @@
+#!/bin/bash -eux
+
+echo "=====> Cleanup"
 # Apt cleanup.
-apt autoremove
-apt update
-apt-get clean
-
-# Delete unneeded files.
-rm -f /home/vagrant/*.sh
-
-# Zero out the rest of the free space using dd, then delete the written file.
-dd if=/dev/zero of=/EMPTY bs=1M
-rm -f /EMPTY
-
-# Add `sync` so Packer doesn't quit too early, before the large file is deleted.
-sync
+DEBIAN_FRONTEND=noninteractive apt-get autoremove
+DEBIAN_FRONTEND=noninteractive apt-get clean
 
 # Disable root account over SSH
+echo "=====> Deleting root access over ssh"
 sed -i '/PermitRootLogin yes/d' /etc/ssh/sshd_config
+echo "=====> Disabling SSH daemon"
+systemctl disable ssh.service

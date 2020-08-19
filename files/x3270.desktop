@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=x3270
+Exec=/usr/bin/x3270
+Icon=/home/evilmf/Pictures/x3270.png
+Type=Application
+Categories=Internet;

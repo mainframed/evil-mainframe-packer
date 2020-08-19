@@ -1,0 +1,24 @@
+! x3270 profile
+! File created Fri Apr 27 19:46:37 2018 by x3270 v3.6ga4 Sat Mar  3 10:53:33 UTC 2018 buildd
+! This file overrides xrdb and .Xdefaults.
+! To skip reading this file, set NOX3270PRO in the environment.
+!
+! emulator font  (-efont)
+x3270.emulatorFont: 3270gt16
+! File updated Fri Apr 27 19:57:46 2018 by x3270 v3.6ga4 Sat Mar  3 10:53:33 UTC 2018 buildd
+! toggles (-set, -clear)
+x3270.marginedPaste: true
+! emulator font  (-efont)
+x3270.emulatorFont: 3270gt24
+! model  (-model)
+x3270.model: 2
+! Allow self signed certs
+x3270.verifyHostCert: false
+!x3270.colorScheme: demo
+!x3270.colorScheme.demo: \
+!    black midnightBlue darkred brown darkGreen\
+!  midnightblue darkgoldenrod black black midnightblue\
+!  SaddleBrown purple DarkGreen darkTurquoise grey\
+!  black black white dimGrey 4 2 1 0
+x3270.crosshair: false
+

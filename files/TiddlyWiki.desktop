@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Tiddly Wiki editor
+Comment=Tiddly Wiki editor
+Exec=/home/evilmf/.local/share/TiddlyDesktop/nw
+Icon=/home/evilmf/.local/share/TiddlyDesktop/images/app-icon.png
+Path=/home/evilmf/.local/share/TiddlyDesktop
+Terminal=false
+StartupNotify=false

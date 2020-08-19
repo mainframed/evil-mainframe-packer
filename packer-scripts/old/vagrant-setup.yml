@@ -1,0 +1,10 @@
+---
+- hosts: all
+  remote_user: root
+  tasks:
+  - name: Add vagrant insecure SSH key
+    authorized_key:
+      state: present
+      key: https://raw.githubusercontent.com/hashicorp/vagrant/master/keys/vagrant.pub
+      user: kali
+    become: "yes"

@@ -1,6 +1,7 @@
 *.vdi
 *.iso
 *.box
+*.ovf
 builds/
 iso/
 output*/
