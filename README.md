@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/mainframed/evil-mainframe-packer/master/logo.png">
+
 # Evil Mainframe Kali Packer
 
 ## Introduction
@@ -44,3 +46,6 @@ To instantiate a VM with Vagrant using the box you've just added, change into a 
 Original json and script forked from: https://github.com/NJonesUK/kali-packer-vagrant
 
 The preseed configuration file is borrowed and modified from the folks at Offensive Security, their examples can be found at [https://gitlab.com/kalilinux/recipes/kali-preseed-examples](https://gitlab.com/kalilinux/recipes/kali-preseed-examples).
+
+
+<img src="https://raw.githubusercontent.com/mainframed/evil-mainframe-packer/master/screenshot.png">
