@@ -58,9 +58,13 @@
       "type": "shell",
       "scripts": [
         "packer-scripts/tiddly.sh",
-        "packer-scripts/labs.sh",
         "packer-scripts/tools.sh" 
       ]
+    },
+    {
+      "type" : "shell",
+      "script" : ["packer-scripts/labs.sh"],
+      "valid_exit_codes": [0,1,128]
     },
     {
       "type": "shell",
