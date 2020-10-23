@@ -10,3 +10,5 @@ ssh-keyscan -H github.com >> ~/.ssh/known_hosts
 echo "======> Cloning Labs"
 cd ~
 git clone git@github.com:mainframed/Labs
+cd Labs
+git remote set-url origin https://github.com/mainframed/Labs
