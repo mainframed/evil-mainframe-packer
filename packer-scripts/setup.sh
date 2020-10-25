@@ -16,7 +16,7 @@ echo "======> Updating and upgrading Kali"
 DEBIAN_FRONTEND=noninteractive apt-get -y update
 DEBIAN_FRONTEND=noninteractive apt-get -o Dpkg::Options::="--force-confnew" upgrade -y
 echo "======> Installing 3270 suite, tnftp and haveged"
-DEBIAN_FRONTEND=noninteractive apt-get -y install x3270 fonts-3270 c3270 s3270 xfonts-x3270-misc tnftp haveged python3-pip ncat open-vm-tools-desktop
+DEBIAN_FRONTEND=noninteractive apt-get -y install x3270 fonts-3270 c3270 s3270 xfonts-x3270-misc tnftp haveged python3-pip ncat open-vm-tools-desktop cool-retro-term
 systemctl enable haveged
 sed -i "/default-user-image/c\default-user-image = \/home\/evilmf\/.face.png" /etc/lightdm/lightdm-gtk-greeter.conf
 echo "xset fp rehash" >> /home/evilmf/.bashrc
