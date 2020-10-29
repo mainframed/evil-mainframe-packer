@@ -1,6 +1,6 @@
 #!/bin/bash -eux
 
-echo "=====> Cleanup"
+echo "=====> Cleanup apt autoremove/clean"
 # Apt cleanup.
 DEBIAN_FRONTEND=noninteractive apt-get autoremove
 DEBIAN_FRONTEND=noninteractive apt-get clean

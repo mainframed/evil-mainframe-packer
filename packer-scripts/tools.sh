@@ -1,8 +1,4 @@
 #!/bin/bash -eux
-#echo "=====> Updating x3270 Fonts"
-#export DISPLAY=:0.0
-#xset fp rehash
-# Install the tools
 
 echo "=====> Making Desktop Launchers Executable"
 chmod +x /home/evilmf/Desktop/*.desktop
