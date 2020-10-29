@@ -168,6 +168,17 @@
       "type": "shell"
     },
     {
+        "destination": "/tmp/evilmf.conf",
+        "source": "files/evilmf.conf",
+        "type": "file"
+    },
+
+    {
+        "execute_command": "echo 'class!' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
+        "script": "packer-scripts/virtual.sh",
+        "type": "shell"
+    },
+    {
       "execute_command": "echo 'class!' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
       "script": "packer-scripts/cleanup.sh",
       "type": "shell"
