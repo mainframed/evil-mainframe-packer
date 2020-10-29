@@ -10,5 +10,5 @@ chmod 0600 /etc/openvpn/client/*
 systemctl enable openvpn-client@evilmf
 echo "======> Adding evilmf to /etc/hosts"
 echo "172.27.27.83 evilmf" >> /etc/hosts
-echo "172.27.27.83 evilmf.evilmainframes.com" >> /etc/hosts
+echo "172.27.27.83 evilmf.evilmainframe.com" >> /etc/hosts
 echo "======> Done with virtual edition"
