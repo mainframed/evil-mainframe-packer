@@ -15,13 +15,12 @@ There is only one user created for use on this system:
 This user has passwordless `sudo` enabled. Labs are located in `~/Labs` and tools are located in `~/Tools`.
 
 ## Requirements
-* Packer - [https://www.packer.io](https://www.packer.io)
+* Packer - [https://www.packer.io/downloads](https://www.packer.io/downloads)
 * Virtualization Software Virtualbox  - [https://www.virtualbox.org](https://www.virtualbox.org)
 * SSH read only key for Evil Mainframe class curriculumn notes/labs
     * Make sure you run `ssh-agent` before you run packer
     * You don't need the key, it will install just fine but you wont have labs/notes.
-* (optionally) Vagrant - [https://www.vagrantup.com](https://www.vagrantup.com)
-    * If using VMware, you'll also need a license to the Vagrant VMware plugin.
+
 
 
 ## Usage
